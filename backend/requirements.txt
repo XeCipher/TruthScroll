@@ -1,0 +1,6 @@
+google-generativeai
+duckduckgo-search
+networkx
+pyvis
+colorama
+requests
