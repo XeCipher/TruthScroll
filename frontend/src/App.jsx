@@ -1,20 +1,28 @@
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import MainLayout from './layouts/MainLayout';
 import Feed from './pages/Feed';
 import Search from './pages/Search';
+import Profile from './pages/Profile';
+import SplashScreen from './components/SplashScreen';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <Router>
-      <div className="bg-truth-bg min-h-screen font-sans text-truth-text">
-        <Routes>
-          <Route path="/" element={<Feed />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/profile" element={<div className='p-10 text-center font-bold text-gray-500 mt-20'>Profile Page (Coming Soon)</div>} />
-        </Routes>
-        <Navbar />
-      </div>
-    </Router>
+    <>
+      {loading && <SplashScreen onFinish={() => setLoading(false)} />}
+      
+      <Router>
+        <MainLayout>
+          <Routes>
+            <Route path="/" element={<Feed />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </MainLayout>
+      </Router>
+    </>
   )
 }
 
