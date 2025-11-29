@@ -1,16 +1,26 @@
-# React + Vite
+# TruthScroll Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tech:** React, Vite, Tailwind CSS, Framer Motion.
 
-Currently, two official plugins are available:
+### **Outcome**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| **Mobile Feed** | **Agent Console** |
+|:---:|:---:|
+| <img src="../assets_pitch/feed_mobile.png" width="300" /> | <img src="../assets_pitch/search_console.png" width="300" /> |
 
-## React Compiler
+| **WhatsApp Analysis** | **Desktop Dashboard** |
+|:---:|:---:|
+| <img src="../assets_pitch/submit_modal.png" width="300" /> | <img src="../assets_pitch/desktop_view.png" width="600" /> |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### **Key UI Capabilities**
 
-## Expanding the ESLint configuration
+1.  **Responsive:** Fully functional on Mobile (App-feel) and Desktop (Dashboard-feel).
+2.  **Interactive:** Polls, Quizzes, and "Swipe" gestures.
+3.  **Visuals:** Dynamic "Origin Graphs" rendered through data from backend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **Run Locally**
+
+```bash
+cd frontend
+npm install
+npm run dev
